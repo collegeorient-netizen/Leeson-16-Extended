@@ -1045,12 +1045,13 @@ function checkQ(btn, chosen, correct){
   qAnswered=true;
   const ok=(chosen===correct);
   btn.classList.add(ok?"correct":"wrong");
+  const quizBody=document.getElementById("quizBody");
   if(!ok){
-    document.querySelectorAll(".ans").forEach(b=>{
+    quizBody.querySelectorAll(".ans").forEach(b=>{
       if(b.querySelector(".ruA").textContent===correct) b.classList.add("correct");
     });
   }
-  document.querySelectorAll(".ans").forEach(b=>b.disabled=true);
+  quizBody.querySelectorAll(".ans").forEach(b=>b.disabled=true);
   const q=qPool[qIdx];
   const fb=document.getElementById("qFeedback");
   if(ok){
@@ -1063,6 +1064,7 @@ function checkQ(btn, chosen, correct){
   document.getElementById("qScore").textContent="⭐ "+qScore;
   document.getElementById("qNext").style.display="inline-block";
 }
+function nextQ(){ qIdx++; renderQuiz(); }
 /* ══════════ TAB 6: УСТНЫЙ ПЕРЕВОД ══════════ */
 
 // Plain Russian text (no HTML) for display in answer boxes
