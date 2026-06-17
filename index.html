@@ -731,7 +731,7 @@
 /* ══════════ DATA ══════════ */
 const story = [
   { ru:`Минь из Тайва́ня. Он <span class="hl">у́чится</span> в Москве́.`,
-    zh:`小明來自台灣。他在莫斯科<span style="color:var(--terra);font-weight:700">讀書</span>。`,
+    zh:`小閔來自台灣。他在莫斯科<span style="color:var(--terra);font-weight:700">讀書</span>。`,
     vi:`Minh đến từ Đài Loan. Cậu ấy <em>học</em> ở Moscow.`,
     en:`Minh is from Taiwan. He <em>studies</em> in Moscow.` },
   { ru:`У́тром он <span class="hl">пьёт</span> чай, а не ко́фе.`,
@@ -743,7 +743,7 @@ const story = [
     vi:`Ban ngày cậu ấy <em>ăn</em> ở căng tin: súp, bánh mì và salad.`,
     en:`During the day he <em>eats</em> in the canteen: soup, bread and salad.` },
   { ru:`О́чень хо́лодно — ми́нус де́сять гра́дусов Це́льсия! Минь <span class="hl">но́сит</span> тёплую ку́ртку и ша́пку.`,
-    zh:`非常冷——零下十攝氏度！小明<span style="color:var(--terra);font-weight:700">穿</span>暖和的外套，<span style="color:var(--terra);font-weight:700">戴</span>帽子。`,
+    zh:`非常冷——零下十攝氏度！小閔<span style="color:var(--terra);font-weight:700">穿</span>暖和的外套，<span style="color:var(--terra);font-weight:700">戴</span>帽子。`,
     vi:`Trời rất lạnh — âm mười độ Celsius! Minh <em>mặc</em> áo khoác ấm và <em>đội</em> mũ.`,
     en:`It's very cold — minus ten degrees Celsius! Minh <em>wears</em> a warm jacket and a hat.` },
   { ru:`Ве́чером он <span class="hl">гуля́ет</span> на Кра́сной пло́щади и <span class="hl">фотографи́рует</span>.`,
@@ -751,7 +751,7 @@ const story = [
     vi:`Buổi tối cậu ấy <em>đi dạo</em> ở Quảng trường Đỏ và <em>chụp ảnh</em>.`,
     en:`In the evening he <em>strolls</em> on Red Square and <em>takes photos</em>.` },
   { ru:`Москва́ больша́я и краси́вая. Минь <span class="hl">скуча́ет</span> по до́му, но он сча́стлив.`,
-    zh:`莫斯科又大又美。小明<span style="color:var(--terra);font-weight:700">想家</span>，但他很開心。`,
+    zh:`莫斯科又大又美。小閔<span style="color:var(--terra);font-weight:700">想家</span>，但他很開心。`,
     vi:`Moscow vừa to vừa đẹp. Minh <em>nhớ nhà</em>, nhưng cậu ấy hạnh phúc.`,
     en:`Moscow is big and beautiful. Minh <em>misses home</em>, but he is happy.` }
 ];
@@ -781,36 +781,36 @@ const matchPool = [
 ];
 
 const questions = [
-  { ru:"Отку́да Минь?", zh:"小明來自哪裡？", en:"Where is Minh from?",
+  { ru:"Отку́да Минь?", zh:"小閔來自哪裡？", en:"Where is Minh from?",
     opts:[{ru:"из Тайва́ня",gloss:"from Taiwan",ok:true},{ru:"из Москвы́",gloss:"from Moscow",ok:false},{ru:"из Кита́я",gloss:"from China",ok:false}],
-    fRu:"Минь из Тайва́ня.", fZh:"小明來自台灣。", fEn:"Minh is from Taiwan." },
-  { ru:"Что де́лает Минь в Москве́?", zh:"小明在莫斯科做什麼？", en:"What does Minh do in Moscow?",
+    fRu:"Минь из Тайва́ня.", fZh:"小閔來自台灣。", fEn:"Minh is from Taiwan." },
+  { ru:"Что де́лает Минь в Москве́?", zh:"小閔在莫斯科做什麼？", en:"What does Minh do in Moscow?",
     opts:[{ru:"он у́чится",gloss:"he studies",ok:true},{ru:"он рабо́тает",gloss:"he works",ok:false},{ru:"он спит",gloss:"he sleeps",ok:false}],
     fRu:"Он у́чится в Москве́.", fZh:"他在莫斯科讀書。", fEn:"He studies in Moscow." },
-  { ru:"Что Минь пьёт у́тром?", zh:"小明早上喝什麼？", en:"What does Minh drink in the morning?",
+  { ru:"Что Минь пьёт у́тром?", zh:"小閔早上喝什麼？", en:"What does Minh drink in the morning?",
     opts:[{ru:"чай",gloss:"tea",ok:true},{ru:"ко́фе",gloss:"coffee",ok:false},{ru:"во́ду",gloss:"water",ok:false}],
     fRu:"У́тром он пьёт чай, а не ко́фе.", fZh:"早上他喝茶，不喝咖啡。", fEn:"In the morning he drinks tea." },
-  { ru:"Где Минь ест днём?", zh:"小明白天在哪裡吃飯？", en:"Where does Minh eat during the day?",
+  { ru:"Где Минь ест днём?", zh:"小閔白天在哪裡吃飯？", en:"Where does Minh eat during the day?",
     opts:[{ru:"в столо́вой",gloss:"in the canteen",ok:true},{ru:"до́ма",gloss:"at home",ok:false},{ru:"в кафе́",gloss:"in a café",ok:false}],
     fRu:"Днём он ест в столо́вой.", fZh:"白天他在食堂吃飯。", fEn:"He eats in the canteen." },
-  { ru:"Что Минь ест в столо́вой?", zh:"小明在食堂吃什麼？", en:"What does Minh eat in the canteen?",
+  { ru:"Что Минь ест в столо́вой?", zh:"小閔在食堂吃什麼？", en:"What does Minh eat in the canteen?",
     opts:[{ru:"суп, хлеб и сала́т",gloss:"soup, bread, salad",ok:true},{ru:"то́лько ко́фе",gloss:"only coffee",ok:false},{ru:"ры́бу",gloss:"fish",ok:false}],
     fRu:"Он ест суп, хлеб и сала́т.", fZh:"他吃湯、麵包和沙拉。", fEn:"He eats soup, bread and salad." },
   { ru:"Кака́я пого́да в Москве́?", zh:"莫斯科天氣怎麼樣？", en:"What's the weather like in Moscow?",
     opts:[{ru:"о́чень хо́лодно, ми́нус де́сять гра́дусов Це́льсия",gloss:"very cold, -10°C",ok:true},{ru:"о́чень жа́рко",gloss:"very hot",ok:false},{ru:"тепло́",gloss:"warm",ok:false}],
     fRu:"О́чень хо́лодно — ми́нус де́сять гра́дусов Це́льсия!", fZh:"非常冷——零下十攝氏度！", fEn:"It's very cold — minus ten degrees Celsius!" },
-  { ru:"Что но́сит Минь?", zh:"小明穿戴什麼？", en:"What does Minh wear?",
+  { ru:"Что но́сит Минь?", zh:"小閔穿戴什麼？", en:"What does Minh wear?",
     opts:[{ru:"тёплую ку́ртку и ша́пку",gloss:"warm jacket and hat",ok:true},{ru:"шо́рты",gloss:"shorts",ok:false},{ru:"футбо́лку",gloss:"a t-shirt",ok:false}],
-    fRu:"Минь но́сит тёплую ку́ртку и ша́пку.", fZh:"小明穿暖和的外套，戴帽子。", fEn:"Minh wears a warm jacket and a hat." },
-  { ru:"Где Минь гуля́ет ве́чером?", zh:"小明晚上在哪裡散步？", en:"Where does Minh walk in the evening?",
+    fRu:"Минь но́сит тёплую ку́ртку и ша́пку.", fZh:"小閔穿暖和的外套，戴帽子。", fEn:"Minh wears a warm jacket and a hat." },
+  { ru:"Где Минь гуля́ет ве́чером?", zh:"小閔晚上在哪裡散步？", en:"Where does Minh walk in the evening?",
     opts:[{ru:"на Кра́сной пло́щади",gloss:"on Red Square",ok:true},{ru:"в столо́вой",gloss:"in the canteen",ok:false},{ru:"до́ма",gloss:"at home",ok:false}],
     fRu:"Ве́чером он гуля́ет на Кра́сной пло́щади.", fZh:"晚上他在紅場散步。", fEn:"In the evening he walks on Red Square." },
-  { ru:"Что де́лает Минь на пло́щади?", zh:"小明在廣場做什麼？", en:"What does Minh do at the square?",
+  { ru:"Что де́лает Минь на пло́щади?", zh:"小閔在廣場做什麼？", en:"What does Minh do at the square?",
     opts:[{ru:"фотографи́рует",gloss:"takes photos",ok:true},{ru:"чита́ет",gloss:"reads",ok:false},{ru:"рабо́тает",gloss:"works",ok:false}],
     fRu:"Он фотографи́рует.", fZh:"他拍照。", fEn:"He takes photos." },
-  { ru:"Как Минь себя́ чу́вствует?", zh:"小明感覺如何？", en:"How does Minh feel?",
+  { ru:"Как Минь себя́ чу́вствует?", zh:"小閔感覺如何？", en:"How does Minh feel?",
     opts:[{ru:"скуча́ет по до́му, но сча́стлив",gloss:"misses home, but happy",ok:true},{ru:"о́чень зол",gloss:"very angry",ok:false},{ru:"всегда́ гру́стен",gloss:"always sad",ok:false}],
-    fRu:"Минь скуча́ет по до́му, но он сча́стлив.", fZh:"小明想家，但他很開心。", fEn:"Minh misses home, but he is happy." }
+    fRu:"Минь скуча́ет по до́му, но он сча́стлив.", fZh:"小閔想家，但他很開心。", fEn:"Minh misses home, but he is happy." }
 ];
 
 /* ══════════ UTILS ══════════ */
@@ -1141,18 +1141,18 @@ function switchOral(mode){
 
 // Each sentence split into shuffleable word tokens (with stress marks, punctuation attached)
 const sentFragments = [
-  { zh:"小明來自台灣。他在莫斯科讀書。", en:"Minh is from Taiwan. He studies in Moscow.",
+  { zh:"小閔來自台灣。他在莫斯科讀書。", en:"Minh is from Taiwan. He studies in Moscow.",
     words:["Минь","из","Тайва́ня.","Он","у́чится","в","Москве́."] },
   { zh:"早上他喝茶，不喝咖啡。", en:"In the morning he drinks tea, not coffee.",
     words:["У́тром","он","пьёт","чай,","а","не","ко́фе."] },
   { zh:"白天他在食堂吃飯：湯、麵包和沙拉。", en:"During the day he eats in the canteen: soup, bread and salad.",
     words:["Днём","он","ест","в","столо́вой:","суп,","хлеб","и","сала́т."] },
-  { zh:"非常冷——零下十攝氏度！小明穿暖和的外套，戴帽子。",
+  { zh:"非常冷——零下十攝氏度！小閔穿暖和的外套，戴帽子。",
     en:"It's very cold — minus ten degrees Celsius! Minh wears a warm jacket and a hat.",
     words:["О́чень","хо́лодно","—","ми́нус","де́сять","гра́дусов","Це́льсия!","Минь","но́сит","тёплую","ку́ртку","и","ша́пку."] },
   { zh:"晚上他在紅場散步並拍照。", en:"In the evening he strolls on Red Square and takes photos.",
     words:["Ве́чером","он","гуля́ет","на","Кра́сной","пло́щади","и","фотографи́рует."] },
-  { zh:"莫斯科又大又美。小明想家，但他很開心。", en:"Moscow is big and beautiful. Minh misses home, but he is happy.",
+  { zh:"莫斯科又大又美。小閔想家，但他很開心。", en:"Moscow is big and beautiful. Minh misses home, but he is happy.",
     words:["Москва́","больша́я","и","краси́вая.","Минь","скуча́ет","по","до́му,","но","он","сча́стлив."] }
 ];
 
